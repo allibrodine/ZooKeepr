@@ -25,7 +25,7 @@ const handleAnimalFormSubmit = event => {
     personalityTraits.push(selectedTraits[i].value);
   }
   const animalObject = { name, species, diet, personalityTraits };
-
+  console.log(animalObject);
   fetch('/api/animals', {
     method: 'POST',
     headers: {
